@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: financing a 100-hectare tobacco season — Coovadia Nyoka</title>
+<meta name="description" content="How I built and negotiated a US$750K seasonal financing budget for a 100 ha tobacco crop, and what it taught me about analysis that has to survive a counterparty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Coovadia Nyoka</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">Projects</a>
+      <a href="weird-leaf.html" aria-current="page">Farming</a>
+      <a href="thinnoff.html">Property</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Financing a 100-hectare tobacco season</h1>
+  <p class="lede">In April 2021 I built and negotiated the seasonal budget that a contract financier funded for our farming operation: roughly US$750,000 of input financing for 100 hectares of tobacco. This is a walkthrough of the model and the negotiation, rebuilt from my own records.</p>
+
+  <p class="note">Everything here comes from the original workbook and email trail. The budget figures are the season plan as negotiated, not audited results; the one realized figure is labelled as such. Counterparty names and account identifiers are omitted. Photographs are from the operation&rsquo;s farm sites, with location metadata removed.</p>
+
+  <figure class="photo">
+    <img src="assets/img/farm-canopy.jpg" alt="Rows of tall irrigated tobacco at full canopy on both sides of a sandy farm road, under an overcast sky, stretching to hills on the horizon." loading="eager">
+    <figcaption>Irrigated tobacco at full canopy. Season KPI: 3.5 tonnes per hectare; yields ran more than 25% above regional benchmarks.</figcaption>
+  </figure>
+
+  <div class="figures" aria-label="Season plan figures">
+    <div class="figure"><b>100 ha</b><span>80 irrigated, 20 dryland</span></div>
+    <div class="figure"><b>US$873.6K</b><span>budgeted revenue (312 t at $2.80/kg)</span></div>
+    <div class="figure"><b>US$7,500</b><span>cost of production per hectare</span></div>
+    <div class="figure"><b>207</b><span>workforce at reaping peak</span></div>
+  </div>
+
+  <section class="case-step">
+    <h3><span class="step-no">1</span>The problem</h3>
+    <p>Tobacco is financed a season in advance. A contract financier advances the inputs (fertiliser, chemicals, coal, insurance, labour cash) and recovers it from the crop, so the budget is not an internal document: it is the loan application, the operating plan, and the negotiation position in one spreadsheet. Get it wrong in either direction and you are either underfunded mid-season or over-borrowed at 9.5% interest.</p>
+  </section>
+
+  <section class="case-step">
+    <h3><span class="step-no">2</span>The model</h3>
+    <p>I built the season bottom-up in a five-sheet linked workbook: monthly labour headcounts (147 rising to 207 through reaping, costed per head), input schedules timed to agronomy (chemicals in July, fertiliser in August, coal for curing in September, hail insurance at US$650/ha in November), packing materials derived from projected bale counts, selling levies per bale, and interest computed monthly on the running drawdown. Every line lands in the month the cash actually leaves.</p>
+    <figure class="chart">
+      <svg viewBox="0 0 680 300" role="img" aria-label="Bar chart of monthly cash requirements, May 2021 to April 2022, in US dollars. Peaks of roughly 110 thousand dollars in July and August for chemicals and fertiliser, and 103 thousand in November for hail insurance, against a baseline near 32 thousand." xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif"><line x1="56" y1="264.0" x2="668" y2="264.0" stroke="#D8DDE1" stroke-width="1"/><text x="48" y="268.0" text-anchor="end" font-size="11" fill="#5C6B77">0k</text><line x1="56" y1="182.0" x2="668" y2="182.0" stroke="#D8DDE1" stroke-width="1"/><text x="48" y="186.0" text-anchor="end" font-size="11" fill="#5C6B77">40k</text><line x1="56" y1="100.0" x2="668" y2="100.0" stroke="#D8DDE1" stroke-width="1"/><text x="48" y="104.0" text-anchor="end" font-size="11" fill="#5C6B77">80k</text><line x1="56" y1="18.0" x2="668" y2="18.0" stroke="#D8DDE1" stroke-width="1"/><text x="48" y="22.0" text-anchor="end" font-size="11" fill="#5C6B77">120k</text><rect x="60.0" y="169.9" width="42.7" height="94.1" fill="#7A3B1E"/><text x="81.3" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">May</text><rect x="110.7" y="198.5" width="42.7" height="65.5" fill="#7A3B1E"/><text x="132.0" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Jun</text><rect x="161.3" y="39.2" width="42.7" height="224.8" fill="#7A3B1E"/><text x="182.7" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Jul</text><rect x="212.0" y="33.7" width="42.7" height="230.3" fill="#7A3B1E"/><text x="233.3" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Aug</text><rect x="262.7" y="60.0" width="42.7" height="204.0" fill="#7A3B1E"/><text x="284.0" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Sep</text><rect x="313.3" y="200.2" width="42.7" height="63.8" fill="#7A3B1E"/><text x="334.7" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Oct</text><rect x="364.0" y="52.2" width="42.7" height="211.8" fill="#7A3B1E"/><text x="385.3" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Nov</text><rect x="414.7" y="192.8" width="42.7" height="71.2" fill="#7A3B1E"/><text x="436.0" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Dec</text><rect x="465.3" y="168.6" width="42.7" height="95.4" fill="#7A3B1E"/><text x="486.7" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Jan</text><rect x="516.0" y="193.8" width="42.7" height="70.2" fill="#7A3B1E"/><text x="537.3" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Feb</text><rect x="566.7" y="188.8" width="42.7" height="75.2" fill="#7A3B1E"/><text x="588.0" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Mar</text><rect x="617.3" y="132.9" width="42.7" height="131.1" fill="#7A3B1E"/><text x="638.7" y="280" text-anchor="middle" font-size="11" fill="#5C6B77">Apr</text></svg>
+      <figcaption>Monthly cash requirement, May 2021 to April 2022, US$. The shape is the point: three input spikes (chemicals, fertiliser and irrigation charges, then coal) and an insurance spike in November, against a steady labour-and-overheads baseline near $32K, with revenue arriving only in the final two months. The financing exists to bridge exactly this profile.</figcaption>
+    </figure>
+    <table class="data">
+      <caption class="muted" style="text-align:left;caption-side:bottom;padding-top:0.5rem">Season plan summary, as negotiated.</caption>
+      <tr><th>Line</th><th class="num">Amount (US$)</th></tr>
+      <tr><td>Budgeted revenue, 312,000 kg at $2.80/kg</td><td class="num">873,600</td></tr>
+      <tr><td>Production and selling costs</td><td class="num">709,512</td></tr>
+      <tr><td>Interest at 9.5% on running drawdown</td><td class="num">40,442</td></tr>
+      <tr><td>Total financed requirement</td><td class="num">749,954</td></tr>
+      <tr><td>Planned margin</td><td class="num">123,646</td></tr>
+    </table>
+  </section>
+
+  <section class="case-step">
+    <h3><span class="step-no">3</span>The negotiation</h3>
+    <p>The first submission went to the financier on 1 April 2021. It came back with questions, we met, and the revised model went back on 7 April holding cost of production at US$7,500 per hectare. Later that season the financier queried why an agronomist&rsquo;s fertiliser recommendation covered 265 hectares when only 100 were financed; I re-scoped the recommendation to the exact fields being planted and, when the budget could not carry liquid fertilisers, confirmed with the agronomist that granular alone was agronomically sound. Holding a number means defending every line beneath it.</p>
+  </section>
+
+  <section class="case-step">
+    <h3><span class="step-no">4</span>The record</h3>
+    <p>This was not a paper exercise. The operation ran three farm sites with 250+ seasonal staff at peak, on daily production, labour, and inventory reporting I designed and trained site clerks to run. In the 2020 season we marketed over 175 tons of tobacco (realized figure, from contemporaneous correspondence with our bank). Yields ran more than 25% above regional benchmarks against the KPI targets we set: 3.5 t/ha tobacco, 4 t/ha seed maize.</p>
+    <div class="photo-pair">
+      <figure class="photo">
+        <img src="assets/img/farm-seedbeds.jpg" alt="Neat green tobacco seedbeds in long rows at sunrise, with float covers and workers in the distance behind a reed fence." loading="lazy">
+        <figcaption>Where every season starts: tobacco seedbeds. The crop is grown twice, first in beds, then in the lands.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/img/farm-transplanting.jpg" alt="A freshly ridged field with young tobacco seedlings just transplanted, a planting crew and tractor in the far distance, and a centre pivot on the horizon." loading="lazy">
+        <figcaption>Transplanting into ridged lands, crew and tractor working ahead. Labour scheduling started from exactly this point in the calendar.</figcaption>
+      </figure>
+    </div>
+    <div class="photo-pair">
+      <figure class="photo">
+        <img src="assets/img/farm-pivot.jpg" alt="A centre-pivot irrigation span over young tobacco rows, with farm buildings and a tree line in the background under a grey sky." loading="lazy">
+        <figcaption>Centre-pivot irrigation over young tobacco; 80 of the 100 financed hectares were irrigated.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/img/farm-maize.jpg" alt="Straight rows of seed maize seedlings emerging across a wide field, with a centre pivot far in the distance." loading="lazy">
+        <figcaption>Seed maize emerging on the pivot lands. Its KPI: 4 tonnes per hectare.</figcaption>
+      </figure>
+    </div>
+    <figure class="photo">
+      <img src="assets/img/farm-wheat.jpg" alt="A rolling golden wheat field under irrigation, with a centre pivot in the middle distance and a mountain behind." loading="lazy">
+      <figcaption>Irrigated winter wheat toward harvest. Wheat kept the lands, the pivots, and the core team working through the dry months.</figcaption>
+    </figure>
+  </section>
+
+  <section class="case-step">
+    <h3><span class="step-no">5</span>Why it matters for analytics work</h3>
+    <p>Everything I now do with SQL, Python, and Power BI, I first did with Excel and a counterparty across the table. The habits transfer directly: build bottom-up from operational reality, put every assumption where the reader can see it, label projections as projections, and expect each number to be challenged by someone whose money is on the line. That is the standard I hold analysis to, because I have been the person who had to live with it.</p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="mailto:coonyoka@gmail.com">coonyoka@gmail.com</a>
+    <a href="https://www.linkedin.com/in/coovadia-nyoka">LinkedIn</a>
+    <a href="https://github.com/cnyoka">GitHub</a>
+    <a href="assets/Coovadia_Nyoka_CV.pdf">Download CV (PDF)</a>
+  </div>
+</footer>
+</body>
+</html>

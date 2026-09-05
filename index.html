@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coovadia Nyoka — Business &amp; Data Analyst</title>
+<meta name="description" content="Business and data analyst in Boston. Seven years running multi-site operations on analytics I built myself, now applying that judgment with SQL, Python, R, and Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Coovadia Nyoka</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="weird-leaf.html">Farming</a>
+      <a href="thinnoff.html">Property</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>I ran businesses on the numbers. Now I build the numbers.</h1>
+  <p class="lede">Seven years operating farms and construction projects in Zimbabwe taught me what analysis is for: a decision someone has to live with. I retrained at Hult (MS in Business Analytics, STEM-designated, Dean's List) to do that work with SQL, Python, R, and Power BI. Based in Boston.</p>
+
+  <div class="figures" aria-label="Selected figures">
+    <div class="figure"><b>US$750K</b><span>seasonal financing budget negotiated</span></div>
+    <div class="figure"><b>35%</b><span>average ROI across 5 property cycles</span></div>
+    <div class="figure"><b>0.797</b><span>AUC, retail churn model</span></div>
+    <div class="figure"><b>9%</b><span>modelled delivery-emissions cut</span></div>
+  </div>
+
+  <h2>Analytics projects</h2>
+
+  <article class="project">
+    <h3>Testing a fan-growth assumption with NLP</h3>
+    <p class="meta">New England Revolution × Hult Applied Consulting · R · Summer 2026 · <a href="https://github.com/cnyoka/revolution-nlp-analysis">repo</a></p>
+    <ul>
+      <li>Built an NLP pipeline over 6,572 public fan documents using sentiment lexicons, LDA topic modeling, and TF-IDF.</li>
+      <li>Tested, and disproved, the client's assumption that the 2026 World Cup was driving fan conversation: a 0.7% mention rate.</li>
+      <li>Located the real problem in service touchpoints, not match content: app store sentiment 65% negative and ticketing 78% negative against positive match-day content.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Route optimization and the case for a $299 fee</h3>
+    <p class="meta">RH × Hult BI Capstone · Python (OR-Tools), Power BI · Spring 2026 · <a href="https://github.com/cnyoka/rh-delivery-optimization">repo</a></p>
+    <ul>
+      <li>Replaced a manual routing and costing process with a cost-minimization model across 19 white-glove customer orders, cutting modelled delivery emissions 9% (674 to 614 kg).</li>
+      <li>Delivered a 6-page Power BI dashboard (loading manifest, route visualization, cost summary, CO2 tracking) on a live SharePoint pipeline with Power Query and DAX.</li>
+      <li>Recommended RH keep its $299 delivery fee as a brand anchor, backed by a $650.09 average cost-per-order analysis. Sometimes the right recommendation is to change nothing.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Churn prediction where the cheaper model won</h3>
+    <p class="meta">UK online retailer dataset · R · Spring 2026 · <a href="https://github.com/cnyoka/churn-prediction-r">repo</a></p>
+    <ul>
+      <li>Built a churn model on 805K retail transactions (5,038 customers) with RFM features and temporal validation: 74.3% sensitivity, 72.4% accuracy, 0.797 AUC.</li>
+      <li>Chose logistic regression over a higher-accuracy decision tree because a churner-detection cost analysis favored it, and shipped an executive brief with a monthly scoring plan and re-engagement triggers.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Predicting urban heat islands with LightGBM</h3>
+    <p class="meta">Gradient boosting, SHAP interpretability · <a href="https://github.com/cnyoka">more on GitHub</a></p>
+    <ul>
+      <li>Modelled urban heat island intensity with LightGBM and used SHAP to make the drivers legible to non-technical readers.</li>
+      <li>The team model scored 0.87 F1 against independent ground truth; my solo variant reached 0.92 F1 under cross-validation (not ground-truth scored, and I say so, because the difference matters).</li>
+    </ul>
+  </article>
+
+  <h2>The operating record</h2>
+  <p>Before analytics school there were seven years of P&amp;L ownership: co-founding and running a 3-site, 250+ person agricultural operation, then delivering five residential build-and-renovation projects at 35% average ROI. The case study below walks through one season of that work with the actual model.</p>
+  <p><a href="weird-leaf.html">Read the case study: financing a 100-hectare tobacco season →</a><br><a href="thinnoff.html">Read the case study: five houses, one cost model →</a></p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="mailto:coonyoka@gmail.com">coonyoka@gmail.com</a>
+    <a href="https://www.linkedin.com/in/coovadia-nyoka">LinkedIn</a>
+    <a href="https://github.com/cnyoka">GitHub</a>
+    <a href="assets/Coovadia_Nyoka_CV.pdf">Download CV (PDF)</a>
+  </div>
+</footer>
+</body>
+</html>

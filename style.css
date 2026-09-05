@@ -1,0 +1,151 @@
+:root {
+  --ink: #1B2733;
+  --slate: #5C6B77;
+  --mahogany: #7A3B1E;
+  --rule: #D8DDE1;
+  --paper: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.0rem;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+header.site {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.1rem 0;
+}
+header.site .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+.site-name {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+nav.site-nav a {
+  color: var(--slate);
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+}
+nav.site-nav a[aria-current="page"] { color: var(--ink); border-bottom: 2px solid var(--mahogany); }
+nav.site-nav a:hover, nav.site-nav a:focus { color: var(--mahogany); }
+
+/* Type */
+h1, h2, h3 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink);
+}
+h1 { font-size: 2.3rem; margin: 2.5rem 0 1rem; }
+h2 { font-size: 1.5rem; margin: 2.75rem 0 0.75rem; }
+h3 { font-size: 1.15rem; margin: 1.75rem 0 0.5rem; }
+p { margin: 0.75rem 0; }
+.lede { font-size: 1.15rem; color: var(--ink); }
+.muted { color: var(--slate); }
+a { color: var(--mahogany); }
+a:focus-visible { outline: 2px solid var(--mahogany); outline-offset: 2px; }
+
+/* Figures strip */
+.figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1.25rem 0;
+  margin: 2rem 0;
+}
+.figure b {
+  display: block;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.figure span { color: var(--slate); font-size: 0.9rem; }
+
+/* Project entries */
+.project { border-top: 1px solid var(--rule); padding: 1.5rem 0; }
+.project:last-of-type { border-bottom: 1px solid var(--rule); }
+.project h3 { margin-top: 0; }
+.project .meta { color: var(--slate); font-size: 0.9rem; margin-top: 0.25rem; }
+.project ul { margin: 0.5rem 0 0.75rem 1.1rem; padding: 0; }
+.project li { margin: 0.35rem 0; }
+
+/* Case study */
+.case-step { margin: 2rem 0; }
+.case-step h3 .step-no {
+  color: var(--mahogany);
+  font-family: "Newsreader", Georgia, serif;
+  margin-right: 0.5rem;
+}
+figure.chart { margin: 2rem 0; }
+figure.chart figcaption { color: var(--slate); font-size: 0.88rem; margin-top: 0.5rem; }
+.note {
+  border-left: 3px solid var(--mahogany);
+  padding: 0.25rem 0 0.25rem 1rem;
+  color: var(--slate);
+  margin: 1.5rem 0;
+}
+
+table.data {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95rem;
+  margin: 1.25rem 0;
+}
+table.data th, table.data td {
+  text-align: left;
+  padding: 0.45rem 0.75rem 0.45rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+table.data th { color: var(--slate); font-weight: 500; }
+table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Footer */
+footer.site {
+  border-top: 1px solid var(--rule);
+  margin-top: 3.5rem;
+  padding: 1.75rem 0 2.5rem;
+  color: var(--slate);
+  font-size: 0.95rem;
+}
+footer.site .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+footer.site a { color: var(--ink); }
+
+@media (max-width: 540px) {
+  h1 { font-size: 1.8rem; }
+  .figures { gap: 1.25rem 2rem; }
+}
+
+/* Photo exhibits */
+figure.photo { margin: 1.75rem 0; }
+figure.photo img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
+figure.photo figcaption { color: var(--slate); font-size: 0.88rem; margin-top: 0.5rem; }
+.photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.75rem 0; }
+.photo-pair figure.photo { margin: 0; }
+@media (max-width: 540px) { .photo-pair { grid-template-columns: 1fr; } }
