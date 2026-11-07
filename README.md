@@ -34,8 +34,8 @@ Static portfolio site for Coovadia Nyoka. Plain HTML/CSS, no build step.
 
 ## Files
 
-- `index.html` — positioning + four analytics projects
-- `weird-leaf.html` — the financing case study (chart is inline SVG, built from the original workbook data)
-- `about.html` — background and contact
-- `style.css` — all styling
-- `assets/Coovadia_Nyoka_CV.pdf` — CV download (currently the Business Analyst version)
+- `index.html`: positioning and four analytics projects
+- `weird-leaf.html`: the financing case study (chart is inline SVG, built from the original workbook data)
+- `about.html`: background and contact
+- `style.css`: all styling
+- `assets/Coovadia_Nyoka_CV.pdf`: CV download (currently the Data Analyst version)
